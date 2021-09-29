@@ -1,0 +1,258 @@
+\hypertarget{_menu_8h}{}\section{Menu.\+h File Reference}
+\label{_menu_8h}\index{Menu.\+h@{Menu.\+h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Lever.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Date\+Time.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Button.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/\+Background\+Menu.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/\+One\+Shot.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/\+Help.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/\+You\+Won.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/\+You\+Lost.\+xpm\char`\"{}}\newline
+Include dependency graph for Menu.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_menu_8h_a6aed5c8222cc428a420e31592d450e87}{load\+\_\+background} ()
+\begin{DoxyCompactList}\small\item\em Carrega o Fundo do Nível. \end{DoxyCompactList}\item 
+void \hyperlink{_menu_8h_a1f1c4b890a8052147d39d676188a20d3}{draw\+\_\+menu\+\_\+background} ()
+\begin{DoxyCompactList}\small\item\em Apresenta no ecrã o Fundo do Nível. \end{DoxyCompactList}\item 
+void \hyperlink{_menu_8h_a8e2e3324f7c070cae77e8738caec2273}{draw\+\_\+help\+\_\+background} ()
+\begin{DoxyCompactList}\small\item\em Apresenta no ecrã o Fundo do Menu Help. \end{DoxyCompactList}\item 
+void \hyperlink{_menu_8h_ac87c2aca163889e8d74e146d4b8b0743}{clean\+\_\+help\+\_\+background} ()
+\begin{DoxyCompactList}\small\item\em Remove do ecrã o Fundo do Menu Help. \end{DoxyCompactList}\item 
+void \hyperlink{_menu_8h_a2d3b46cfeda0a6ceeeecd0ce06dc0c4c}{add\+\_\+to\+\_\+background} (xpm\+\_\+image\+\_\+t $\ast$img, int x, int y)
+\begin{DoxyCompactList}\small\item\em Adiciona ao Fundo do Nível o X\+PM especificado, na posição especificada. \end{DoxyCompactList}\item 
+void \hyperlink{_menu_8h_ac093f10acf5414eacb6515d138832e3f}{Load\+Main\+Menu} (bool first\+Load)
+\begin{DoxyCompactList}\small\item\em Carrega o Fundo do Main Menu. \end{DoxyCompactList}\item 
+void \hyperlink{_menu_8h_a62227e1faa147bac8266934a18391860}{Load\+Pause\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Carrega o Fundo do Pause Menu. \end{DoxyCompactList}\item 
+void \hyperlink{_menu_8h_af1b1466d151bffefcb9c38c67a5637f6}{Load\+Won\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Carrega o Fundo do Won Menu. \end{DoxyCompactList}\item 
+void \hyperlink{_menu_8h_a998dda9cf56a26208038ec11f52cd093}{Load\+Lost\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Carrega o Fundo do Lost Menu. \end{DoxyCompactList}\item 
+void \hyperlink{_menu_8h_a88fe85cb9ddb0d8df353007206f18170}{Main\+Menu\+Interrupt\+Handler} (\hyperlink{_game_8h_adb53a8cc97236ca207c035241a5b7fb8}{Device} device)
+\begin{DoxyCompactList}\small\item\em Controlo das Interrupções de um dado dispositivo relativas ao Main Menu. \end{DoxyCompactList}\item 
+void \hyperlink{_menu_8h_a6c5b6eec16020e86d44fe682e0c2cf98}{Pause\+Menu\+Interrupt\+Handler} (\hyperlink{_game_8h_adb53a8cc97236ca207c035241a5b7fb8}{Device} device)
+\begin{DoxyCompactList}\small\item\em Controlo das Interrupções de um dado dispositivo relativas ao Pause Menu. \end{DoxyCompactList}\item 
+void \hyperlink{_menu_8h_a6378cd00b8a57137c7b5c6a5621066cb}{Help\+Menu\+Interrupt\+Handler} (\hyperlink{_game_8h_adb53a8cc97236ca207c035241a5b7fb8}{Device} device)
+\begin{DoxyCompactList}\small\item\em Controlo das Interrupções de um dado dispositivo relativas ao Help Menu. \end{DoxyCompactList}\item 
+void \hyperlink{_menu_8h_ac87308b0d88fe61ed0ac687502df1649}{Game\+Won\+Interrupt\+Handler} (\hyperlink{_game_8h_adb53a8cc97236ca207c035241a5b7fb8}{Device} device)
+\begin{DoxyCompactList}\small\item\em Controlo das Interrupções de um dado dispositivo relativas ao Won Menu. \end{DoxyCompactList}\item 
+void \hyperlink{_menu_8h_a08d886baf75cbf778e6eafa9ac9a82a9}{Game\+Lost\+Interrupt\+Handler} (\hyperlink{_game_8h_adb53a8cc97236ca207c035241a5b7fb8}{Device} device)
+\begin{DoxyCompactList}\small\item\em Controlo das Interrupções de um dado dispositivo relativas ao Lost Menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_menu_8h_a2d3b46cfeda0a6ceeeecd0ce06dc0c4c}\label{_menu_8h_a2d3b46cfeda0a6ceeeecd0ce06dc0c4c}} 
+\index{Menu.\+h@{Menu.\+h}!add\+\_\+to\+\_\+background@{add\+\_\+to\+\_\+background}}
+\index{add\+\_\+to\+\_\+background@{add\+\_\+to\+\_\+background}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{add\+\_\+to\+\_\+background()}{add\_to\_background()}}
+{\footnotesize\ttfamily void add\+\_\+to\+\_\+background (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t $\ast$}]{img,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Adiciona ao Fundo do Nível o X\+PM especificado, na posição especificada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & X\+PM a adicionar ao Fundo do Nível \\
+\hline
+{\em x} & Posição dos x onde se vai adicionar o X\+PM \\
+\hline
+{\em y} & Posição dos y onde se vai adicionar o X\+PM \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_menu_8h_ac87c2aca163889e8d74e146d4b8b0743}\label{_menu_8h_ac87c2aca163889e8d74e146d4b8b0743}} 
+\index{Menu.\+h@{Menu.\+h}!clean\+\_\+help\+\_\+background@{clean\+\_\+help\+\_\+background}}
+\index{clean\+\_\+help\+\_\+background@{clean\+\_\+help\+\_\+background}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{clean\+\_\+help\+\_\+background()}{clean\_help\_background()}}
+{\footnotesize\ttfamily void clean\+\_\+help\+\_\+background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Remove do ecrã o Fundo do Menu Help. 
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{_menu_8h_a8e2e3324f7c070cae77e8738caec2273}\label{_menu_8h_a8e2e3324f7c070cae77e8738caec2273}} 
+\index{Menu.\+h@{Menu.\+h}!draw\+\_\+help\+\_\+background@{draw\+\_\+help\+\_\+background}}
+\index{draw\+\_\+help\+\_\+background@{draw\+\_\+help\+\_\+background}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{draw\+\_\+help\+\_\+background()}{draw\_help\_background()}}
+{\footnotesize\ttfamily void draw\+\_\+help\+\_\+background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Apresenta no ecrã o Fundo do Menu Help. 
+
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{_menu_8h_a1f1c4b890a8052147d39d676188a20d3}\label{_menu_8h_a1f1c4b890a8052147d39d676188a20d3}} 
+\index{Menu.\+h@{Menu.\+h}!draw\+\_\+menu\+\_\+background@{draw\+\_\+menu\+\_\+background}}
+\index{draw\+\_\+menu\+\_\+background@{draw\+\_\+menu\+\_\+background}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{draw\+\_\+menu\+\_\+background()}{draw\_menu\_background()}}
+{\footnotesize\ttfamily void draw\+\_\+menu\+\_\+background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Apresenta no ecrã o Fundo do Nível. 
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{_menu_8h_a08d886baf75cbf778e6eafa9ac9a82a9}\label{_menu_8h_a08d886baf75cbf778e6eafa9ac9a82a9}} 
+\index{Menu.\+h@{Menu.\+h}!Game\+Lost\+Interrupt\+Handler@{Game\+Lost\+Interrupt\+Handler}}
+\index{Game\+Lost\+Interrupt\+Handler@{Game\+Lost\+Interrupt\+Handler}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{Game\+Lost\+Interrupt\+Handler()}{GameLostInterruptHandler()}}
+{\footnotesize\ttfamily void Game\+Lost\+Interrupt\+Handler (\begin{DoxyParamCaption}\item[{\hyperlink{_game_8h_adb53a8cc97236ca207c035241a5b7fb8}{Device}}]{device }\end{DoxyParamCaption})}
+
+
+
+Controlo das Interrupções de um dado dispositivo relativas ao Lost Menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & Dispositivo que gerou interrupções \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{_menu_8h_ac87308b0d88fe61ed0ac687502df1649}\label{_menu_8h_ac87308b0d88fe61ed0ac687502df1649}} 
+\index{Menu.\+h@{Menu.\+h}!Game\+Won\+Interrupt\+Handler@{Game\+Won\+Interrupt\+Handler}}
+\index{Game\+Won\+Interrupt\+Handler@{Game\+Won\+Interrupt\+Handler}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{Game\+Won\+Interrupt\+Handler()}{GameWonInterruptHandler()}}
+{\footnotesize\ttfamily void Game\+Won\+Interrupt\+Handler (\begin{DoxyParamCaption}\item[{\hyperlink{_game_8h_adb53a8cc97236ca207c035241a5b7fb8}{Device}}]{device }\end{DoxyParamCaption})}
+
+
+
+Controlo das Interrupções de um dado dispositivo relativas ao Won Menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & Dispositivo que gerou interrupções \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{_menu_8h_a6378cd00b8a57137c7b5c6a5621066cb}\label{_menu_8h_a6378cd00b8a57137c7b5c6a5621066cb}} 
+\index{Menu.\+h@{Menu.\+h}!Help\+Menu\+Interrupt\+Handler@{Help\+Menu\+Interrupt\+Handler}}
+\index{Help\+Menu\+Interrupt\+Handler@{Help\+Menu\+Interrupt\+Handler}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{Help\+Menu\+Interrupt\+Handler()}{HelpMenuInterruptHandler()}}
+{\footnotesize\ttfamily void Help\+Menu\+Interrupt\+Handler (\begin{DoxyParamCaption}\item[{\hyperlink{_game_8h_adb53a8cc97236ca207c035241a5b7fb8}{Device}}]{device }\end{DoxyParamCaption})}
+
+
+
+Controlo das Interrupções de um dado dispositivo relativas ao Help Menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & Dispositivo que gerou interrupções \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{_menu_8h_a6aed5c8222cc428a420e31592d450e87}\label{_menu_8h_a6aed5c8222cc428a420e31592d450e87}} 
+\index{Menu.\+h@{Menu.\+h}!load\+\_\+background@{load\+\_\+background}}
+\index{load\+\_\+background@{load\+\_\+background}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{load\+\_\+background()}{load\_background()}}
+{\footnotesize\ttfamily void load\+\_\+background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Carrega o Fundo do Nível. 
+
+\mbox{\Hypertarget{_menu_8h_a998dda9cf56a26208038ec11f52cd093}\label{_menu_8h_a998dda9cf56a26208038ec11f52cd093}} 
+\index{Menu.\+h@{Menu.\+h}!Load\+Lost\+Menu@{Load\+Lost\+Menu}}
+\index{Load\+Lost\+Menu@{Load\+Lost\+Menu}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{Load\+Lost\+Menu()}{LoadLostMenu()}}
+{\footnotesize\ttfamily void Load\+Lost\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Carrega o Fundo do Lost Menu. 
+
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{_menu_8h_ac093f10acf5414eacb6515d138832e3f}\label{_menu_8h_ac093f10acf5414eacb6515d138832e3f}} 
+\index{Menu.\+h@{Menu.\+h}!Load\+Main\+Menu@{Load\+Main\+Menu}}
+\index{Load\+Main\+Menu@{Load\+Main\+Menu}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{Load\+Main\+Menu()}{LoadMainMenu()}}
+{\footnotesize\ttfamily void Load\+Main\+Menu (\begin{DoxyParamCaption}\item[{bool}]{first\+Load }\end{DoxyParamCaption})}
+
+
+
+Carrega o Fundo do Main Menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Load} & Boleano\+: 1 se for a primeira vez que o Main Menu é carregado, 0 caso contrário \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 9
+\mbox{\Hypertarget{_menu_8h_a62227e1faa147bac8266934a18391860}\label{_menu_8h_a62227e1faa147bac8266934a18391860}} 
+\index{Menu.\+h@{Menu.\+h}!Load\+Pause\+Menu@{Load\+Pause\+Menu}}
+\index{Load\+Pause\+Menu@{Load\+Pause\+Menu}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{Load\+Pause\+Menu()}{LoadPauseMenu()}}
+{\footnotesize\ttfamily void Load\+Pause\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Carrega o Fundo do Pause Menu. 
+
+Here is the call graph for this function\+:
+% FIG 10
+\mbox{\Hypertarget{_menu_8h_af1b1466d151bffefcb9c38c67a5637f6}\label{_menu_8h_af1b1466d151bffefcb9c38c67a5637f6}} 
+\index{Menu.\+h@{Menu.\+h}!Load\+Won\+Menu@{Load\+Won\+Menu}}
+\index{Load\+Won\+Menu@{Load\+Won\+Menu}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{Load\+Won\+Menu()}{LoadWonMenu()}}
+{\footnotesize\ttfamily void Load\+Won\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Carrega o Fundo do Won Menu. 
+
+Here is the call graph for this function\+:
+% FIG 11
+\mbox{\Hypertarget{_menu_8h_a88fe85cb9ddb0d8df353007206f18170}\label{_menu_8h_a88fe85cb9ddb0d8df353007206f18170}} 
+\index{Menu.\+h@{Menu.\+h}!Main\+Menu\+Interrupt\+Handler@{Main\+Menu\+Interrupt\+Handler}}
+\index{Main\+Menu\+Interrupt\+Handler@{Main\+Menu\+Interrupt\+Handler}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{Main\+Menu\+Interrupt\+Handler()}{MainMenuInterruptHandler()}}
+{\footnotesize\ttfamily void Main\+Menu\+Interrupt\+Handler (\begin{DoxyParamCaption}\item[{\hyperlink{_game_8h_adb53a8cc97236ca207c035241a5b7fb8}{Device}}]{device }\end{DoxyParamCaption})}
+
+
+
+Controlo das Interrupções de um dado dispositivo relativas ao Main Menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & Dispositivo que gerou interrupções \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 12
+\mbox{\Hypertarget{_menu_8h_a6c5b6eec16020e86d44fe682e0c2cf98}\label{_menu_8h_a6c5b6eec16020e86d44fe682e0c2cf98}} 
+\index{Menu.\+h@{Menu.\+h}!Pause\+Menu\+Interrupt\+Handler@{Pause\+Menu\+Interrupt\+Handler}}
+\index{Pause\+Menu\+Interrupt\+Handler@{Pause\+Menu\+Interrupt\+Handler}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{Pause\+Menu\+Interrupt\+Handler()}{PauseMenuInterruptHandler()}}
+{\footnotesize\ttfamily void Pause\+Menu\+Interrupt\+Handler (\begin{DoxyParamCaption}\item[{\hyperlink{_game_8h_adb53a8cc97236ca207c035241a5b7fb8}{Device}}]{device }\end{DoxyParamCaption})}
+
+
+
+Controlo das Interrupções de um dado dispositivo relativas ao Pause Menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & Dispositivo que gerou interrupções \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 13

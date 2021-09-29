@@ -56,3 +56,6 @@ dkms.conf
 .vscode/
 *.clang-format
 *.gdbinit
+*.md5
+*.dot
+*.js
