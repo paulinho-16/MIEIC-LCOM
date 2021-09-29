@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# SVN & VSCode
+.svn/
+.vscode/
+*.clang-format
+*.gdbinit
